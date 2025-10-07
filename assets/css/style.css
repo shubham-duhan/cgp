@@ -290,7 +290,6 @@ header{
      }
      .footer-container{
         padding-top: 81px ;
-        /* flex-wrap: wrap; */
      }
      .footer-social-links{
         padding-top: 10px;
@@ -392,9 +391,6 @@ header{
     .btn-all{
         width: 140px;
         padding: 11px 10px 10px 10px;
-    }
-    .footer-article{
-        /* padding-left: 90px; */
     }
     .footer-article img{
         width: 130px;
