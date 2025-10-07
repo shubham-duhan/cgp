@@ -1,0 +1,138 @@
+:root{
+    /* font size */
+    --fs-xs:10px;
+    --fs-sm:12px;
+    --fs-base:14px;
+    --fs-lg:15px;
+    --fs-xl:16px;
+    --fs-xxl:17px;
+    --fs-xxxl:20px;
+    --fs-xxxxl:40px;
+    --fs-xxxxxl:65px;
+    /* color */
+    
+    --color-biscay:#1A305A;
+    --color-gray:#969696;
+    --color-white: white;
+    --color-dodgerBlue: #36BEFF;
+    --bg-dodgerBlue: #36BEFF;
+    --color-silverChalice:#9F9F9F;
+    --color-gray:#939393;
+
+    /* font family */
+    --ff-bebas-neue:"Bebas Neue", sans-serif;
+
+
+    /* font weight */
+    --fw-light:300;
+    --fw-regular:400;
+    --fw-semibold:600;
+    --fw-bold:700;
+}
+/* font sizes */
+.fs-xs{
+    font-size: var(--fs-xs);
+}
+.fs-sm{
+    font-size: var(--fs-sm);
+}
+.fs-base{
+    font-size: var(--fs-base);
+}
+.fs-lg{
+    font-size: var(--fs-lg);
+}
+.fs-xl{
+    font-size: var(--fs-xl);
+}
+.fs-xxl{
+    font-size: var(--fs-xxl);
+}
+.fs-xxxl{
+    font-size: var(--fs-xxxl);
+}
+.fs-xxxxl{
+    font-size: var(--fs-xxxxl);
+}
+.fs-xxxxxl{
+    font-size: var(--fs-xxxxxl);
+}
+
+/* font family */
+.ff-bebas-neue{
+    font-family: var(--ff-bebas-neue);
+}
+
+/* font weight */
+.fw-light{
+    font-weight: var(--fw-300);
+}
+.fw-regular{
+    font-weight: var(--fw-regular);
+}
+.fw-semibold{
+    font-weight: var(--fw-semibold);
+}
+.fw-bold{
+    font-weight: var(--fw-bold);
+}
+
+/* colors */
+.color-white{
+    color: var(--color-white);
+}
+.color-gray{
+    color: var(--color-gray);
+}
+.color-biscay{
+    color: var(--color-biscay);
+}
+.color-dodgerBlue{
+    color: var(--color-dodgerBlue);
+}
+.bg-dodgerBlue{
+    background-color: var(--bg-dodgerBlue);
+}
+.color-silverChalice{
+    color: var(--color-silverChalice);
+}
+.color-gray{
+    color: var(--color-gray);
+}
+/* Justify */
+
+.uppercase{
+    text-transform: uppercase;
+}
+@media (max-width:600px) {
+    :root{
+        --fs-xs:14px;
+        --fs-xxl:14px;
+        --fs-xxxxxl:40px;
+    }
+}
+/* @media (max-width:992px) {
+    :root{
+          --fs-xs:10px;
+    --fs-sm:12px;
+    --fs-base:12px;
+    --fs-lg:13px;
+    --fs-xl:14px;
+    --fs-2xl:15px;
+    --fs-3xl:18px;
+    --fs-4xl:35px;
+    --fs-5xl:55px;
+    }
+}@media (max-width:576px) {
+    :root{
+          --fs-xs:10px;
+    --fs-sm:11px;
+    --fs-base:11px;
+    --fs-lg:12px;
+    --fs-xl:13px;
+    --fs-2xl:14px;
+    --fs-3xl:16px;
+    --fs-4xl:25px;
+    --fs-5xl:35px;
+    }
+} */

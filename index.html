@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGP</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/root.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <nav class="custom-container d-flex justify-content-between">
+            <a href="#"><img src="./assets/img/svg/logo.svg" alt="logo"></a>
+            <div class="nav-data d-flex">
+                <a href="#" class="fs-lg api">RPC API</a>
+                <a href="#" class="fs-lg api">Pricing</a>
+                <a href="#" class="fs-lg api">About</a>
+                <a href="#" class="fs-lg fw-bold api">Docs</a>
+                <button class="btn-launch launch fs-base fw-bold">Launch APP</button>
+                <div class="nav-icons ">
+                    <a href="#"><img src="./assets/img/svg/telegram.svg" alt="telegram"></a>
+                    <a href="#"><img src="./assets/img/svg/twitter.svg" alt="twitter"></a>
+                    <a href="#"><img src="./assets/img/svg/discord.svg" alt="discord"></a>
+                </div>
+            </div>
+
+            <div class="toggler-data">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight" class="toggler-data"><img src="./assets/img/svg/bars.svg" alt="bars"
+                        class="bars"></button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-body bg-dark d-flex flex-column gap-3">
+                        <button type="button" class="btn-close d-flex align-items-end flex-column"
+                            style="filter: invert(1);" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        <div class="nav-items nav-items-data">
+                            <a href="#" class="p-3"><img src="./assets/img/svg/telegram.svg" alt="telegram"><a>
+                                    <a href="#" class="p-3"><img src="./assets/img/svg/twitter.svg" alt="twitter"></a>
+                                    <a href="#" class="p-3"><img src="./assets/img/svg/discord.svg" alt="discord"></a>
+                        </div>
+                        <button class="btn-launch launch-app fs-base fw-bold">Launch
+                            APP</button>
+                        <a href="#" class="fs-lg color-white">RPC API</a>
+                        <a href="#" class="fs-lg color-white">Pricing</a>
+                        <a href="#" class="fs-lg color-white">About</a>
+                        <a href="#" class="fs-lg fw-bold color-white">Docs</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <section class="hero-section">
+            <div class="custom-container hero">
+
+                <h1 class="ff-bebas-neue fs-xxxxxl uppercase color-white text-center m-0">
+                    The <span class="color-dodgerBlue">web3</span> developer hub
+                </h1>
+                <p class="color-white fs-xxl text-center m-0">View API References, guides, and tutorials for Ethereum,
+                    Polygon, Optimism, Arbitrum, Solana and Astar.</p>
+                <button class="btn-cgp fw-semibold d-flex justify-content-center">View docs</button>
+
+            </div>
+        </section>
+    </header>
+    <main>
+        <!-- Popular Section Starts -->
+        <section class="popular">
+            <div class="custom-container popular-parent">
+                <h2 class="color-white text-center fs-xxxxl ff-bebas-neue">Most popular</h2>
+                <div class="container py-5">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/diamond-four.svg" alt="diamond">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">NFT API <br>Quickstart</h5>
+                                    </div>
+
+                                    <p class="fs-base text-white card-data ">
+                                        Easiest way to get NFT data from ownership to sales to metadata and more.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/ethereum.svg" alt="ethereum">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">Ethereum API Quickstart</h5>
+                                    </div>
+
+                                    <p class="fs-base text-white card-data">
+                                        How to get started building on Ethereum and using the JSON-RPC API.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/code-block.svg" alt="code-block">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">SDK <br>Quickstart</h5>
+                                    </div>
+
+                                    <p class="fs-base text-white card-data">
+                                        The easiest way to connect your dApp to the blockchain using JavaScript.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/clock.svg" alt="clock">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">alchemy_pending Transactions
+                                        </h5>
+                                    </div>
+
+                                    <p class="fs-base text-white card-data-solidity">
+                                        Subscribe to full transaction objects or hashes that are pending based on
+                                        provided filters.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/dollar.svg" alt="dollar">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">What are payable functions in
+                                            Solidity?</h5>
+                                    </div>
+
+                                    <p class="fs-base text-white card-data-solidity">
+                                        Learn how payable functions work in Solidity.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/slide-show.svg" alt="slide-show">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">How to get all NFTs owned by
+                                            an address</h5>
+                                    </div>
+
+                                    <p class="fs-base text-white card-data-solidity">
+                                        Query all NFTs owned by a provided address in one line of code.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Web3 Section Starts -->
+        <section class="web3">
+            <div class="custom-container web3-parent">
+                <h2 class="text-white ff-bebas-neue fs-xxxxl text-center">Learn how to <span
+                        class="color-dodgerBlue">build in web3</span></h2>
+                <div class="container py-5">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="web3-card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/student.svg" alt="student">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">Alchemy <br>University</h5>
+                                    </div>
+
+                                    <p class="fs-sm  web3-card-data ">
+                                        Ethereum Developer Bootcamp and JavaScript Fundamentals Courses, for free.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="web3-card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/globe.svg" alt="globe">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">Create Web3 <br>Dapp</h5>
+                                    </div>
+
+                                    <p class="fs-sm  web3-card-data">
+                                        Create a full-stack dApp in ~4 mins, right from the command-line.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="web3-card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/book.svg" alt="book">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">View all <br>tutorials</h5>
+                                    </div>
+
+                                    <p class="fs-sm  web3-card-data">
+                                        Web3 tutorials for all topics: NFTs, Solidity, DeFI, transactions, and more!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- References Section Starts -->
+        <section class="references">
+            <div class="custom-container references-parent">
+                <h2 class="text-white text-center fs-xxxxl ff-bebas-neue m-0"><span class="color-dodgerBlue">API</span>
+                    references for all chains</h2>
+                <p class="text-center text-white fs-xxl">Including free Archive data on all chains and testnets.</p>
+
+                <div class="chain-parent d-flex justify-content-center">
+                    <div>
+                        <div class="chain-child">
+                            <img src="./assets/img/svg/etherum.svg" alt="etherum">
+                        </div>
+                        <p class="color-white text-center mt-3 fs-base">Ethereum</p>
+                    </div>
+                    <div>
+                        <div class="chain-child polygon">
+                            <img src="./assets/img/svg/polygon.svg" alt="polygon">
+                        </div>
+                        <p class="color-white text-center mt-3 fs-base">Polygon PoS</p>
+                    </div>
+                    <div>
+                        <div class="chain-child arbitrum">
+                            <img src="./assets/img/svg/arbitrum.svg" alt="arbitrum">
+                        </div>
+                        <p class="color-white text-center mt-3 fs-base">Arbitrum</p>
+                    </div>
+                    <div>
+                        <div class="chain-child polygon-zyc">
+                            <img src="./assets/img/svg/polygon-zyc.svg" alt="polygon-zyc">
+                        </div>
+                        <p class="color-white text-center mt-3 fs-base">Polygon ZKEVM</p>
+                    </div>
+                    <div>
+                        <div class="chain-child base">
+                            <img src="./assets/img/svg/base.svg" alt="base">
+                        </div>
+                        <p class="color-white text-center mt-3 fs-base">Base</p>
+                    </div>
+                    <div>
+                        <div class="chain-child optimism">
+                            <img src="./assets/img/svg/optimism.svg" alt="optimism">
+                        </div>
+                        <p class="color-white text-center mt-3 fs-base">Optimism</p>
+                    </div>
+                    <div>
+                        <div class="chain-child solana">
+                            <img src="./assets/img/svg/solana.svg" alt="solana">
+                        </div>
+                        <p class="color-white text-center mt-3 fs-base">Solana</p>
+                    </div>
+                    <div>
+                        <div class="chain-child astar">
+                            <img src="./assets/img/svg/astar.svg" alt="astar">
+                        </div>
+                        <p class="color-white text-center mt-3 fs-base">Astar</p>
+                    </div>
+                    <div>
+                        <div class="chain-child starknet">
+                            <img src="./assets/img/svg/starknet.svg" alt="starknet">
+                        </div>
+                        <p class="color-white text-center mt-3 fs-base">Starknet</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Case Api Section Starts -->
+        <section class="case-api">
+            <div class="custom-container case-api-parent">
+                <h2 class="text-center text-white fs-xxxxl uppercase ff-bebas-neue m-0">Use case <span
+                        class="color-dodgerBlue">API</span>s</h2>
+                <p class="text-center text-white fs-xxxl">APIs built to optimize your code and make life as a developer
+                    way easier.</p>
+                <div class="container py-5">
+                    <div class="row g-4">
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="web3-card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/nft.svg" alt="nft">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">NFT API</h5>
+                                    </div>
+
+                                    <p class="fs-base case-api-card-data ">
+                                        Get all the NFT data you need with this suite of endpoints
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="web3-card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/transact.svg" alt="globe">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">Transact</h5>
+                                    </div>
+
+                                    <p class="fs-base case-api-card-data">
+                                        Send transactions 7.9x faster
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="web3-card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/token.svg" alt="token">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">Token API</h5>
+                                    </div>
+
+                                    <p class="fs-base case-api-card-data">
+                                        Get token valuable information to display to users
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="web3-card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/transfer-api.svg" alt="transfer-api">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">Transfers API</h5>
+                                    </div>
+
+                                    <p class="fs-base case-api-card-data ">
+                                        Get historical transactions for any address or contract
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="web3-card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/norify.svg" alt="notify">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">Notify API</h5>
+                                    </div>
+
+                                    <p class="fs-base case-api-card-data ">
+                                        Webhooks for transaction activity
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4">
+                            <div class="web3-card-custom h-100">
+                                <div>
+                                    <div class="icon d-flex gap-3">
+                                        <img src="./assets/img/svg/trace.svg" alt="trace">
+                                        <h5 class="card-title text-white fs-xxxl fw-bold ">Trace API</h5>
+                                    </div>
+
+                                    <p class="fs-base case-api-card-data ">
+                                        Deep insights for transaction processing
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-container case-api-aside">
+                <button class="btn-cgp fw-semibold d-flex justify-content-center btn-all">View all APIs</button>
+                <h2 class="text-center text-white fs-xxxxl uppercase ff-bebas-neue ">Trusted by the best in the industry
+                </h2>
+                <div class="companies-parent d-flex justify-content-center">
+                    <div class="companies-child "><img src="./assets/img/svg/shopify.svg" alt="shopify"></div>
+                    <div class="companies-child "><img src="./assets/img/svg/adobe.svg" alt="adobe"></div>
+                    <div class="companies-child "><img src="./assets/img/svg/open-sea.svg" alt="open-sea"></div>
+                    <div class="companies-child "><img src="./assets/img/svg/0x.svg" alt="0x"></div>
+                    <div class="companies-child "><img src="./assets/img/svg/aave.svg" alt="aave"></div>
+                    <div class="companies-child "><img src="./assets/img/svg/royal.svg" alt="royal"></div>
+                    <div class="companies-child "><img src="./assets/img/svg/zerion.svg" alt="zerion"></div>
+                    <div class="companies-child "><img src="./assets/img/svg/dydx.svg" alt="dydx"></div>
+                    <div class="companies-child "><img src="./assets/img/svg/zapper.svg" alt="zapper"></div>
+                    <div class="companies-child "><img src="./assets/img/svg/ledger.svg" alt="ledger"></div>
+                    <div class="companies-child "><img src="./assets/img/svg/chainlink.svg" alt="chainlink"></div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Developer Community Starts -->
+        <section class="community">
+            <div class="custom-container community-parent">
+                <h2 class="text-center text-white fs-xxxxl ff-bebas-neue m-0">Join the <span
+                        class="color-dodgerBlue">web3</span> developer community</h2>
+                <p class="text-center text-white fs-xl m-0">Get help with your product, meet other developers, and get
+                    access to a world-class community</p>
+                <button class="btn-cgp fw-semibold d-flex justify-content-center btn-all">View docs</button>
+                <div class="community-icons d-flex justify-content-center">
+                    <a href="#" class="p-3"><img src="./assets/img/svg/telegram.svg" alt="telegram"><a>
+                            <a href="#" class="p-3"><img src="./assets/img/svg/twitter.svg" alt="twitter"></a>
+                            <a href="#" class="p-3"><img src="./assets/img/svg/discord.svg" alt="discord"></a>
+                </div>
+            </div>
+        </section>
+        <footer>
+        <div class=" footer-container custom-container">
+            <div class="text-start footer-article">
+                <div class="row align-items-start">
+                    <div class="col-12 col-sm-3 ">
+                        <div class="footer-article">
+                            <img src="/assets/img/svg/logo.svg" alt="logo">
+                        <p class=" m-0 text-white footer-description fs-xs fw-light "> Powering the future of blockchain technology
+                            with enhanced RPC solutions. Join us on the journey.</p>
+                        <div class="d-flex footer-social-links gap-3">
+                            <img src="/assets/img/svg/telegram.svg" alt="telegram">
+                            <img src="/assets/img/svg/twitter.svg" alt="twitter">
+                            <img src="/assets/img/svg/discord.svg" alt="discord">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-9 footer-links">
+                        <div class="text-start">
+                            <div class="row align-items-start">
+                                <div class="col-6 col-md-3 mt-5 mt-sm-0">
+                                    <ul class=" text-white fw-light fs-lg">
+                                        <h5 class="fw-semibold fs-lg">APIs</h5>
+                                        <li> Ethereum API
+                                        </li>
+                                        <li>Polygon API
+                                        </li>
+                                        <li>Arbitrum API
+                                        </li>
+                                        <li>Optimism API
+                                        </li>
+                                        <li>Solana API
+                                        </li>
+                                        <li>NFT API
+                                        </li>
+                                        <li>Transfers API
+                                        </li>
+                                        <li>Token API
+                                        </li>
+                                        <li>View all</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-3 mt-5 mt-sm-0">
+                                    <ul class=" text-white fw-light fs-lg">
+                                        <h5 class="fw-semibold fs-lg">DEVELOPERS</h5>
+                                        <li> Sign Up
+                                        </li>
+                                        <li>Login
+                                        </li>
+                                        <li>Newsletter
+                                        </li>
+                                        <li>Status
+                                        </li>
+                                        <li>Create Web3 Dapp
+                                        </li>
+                                        <li>Sepolia Faucet
+                                        </li>
+                                        <li>Goerli Faucet
+                                        </li>
+                                        <li>Mumbai Faucet
+                                        </li>
+                                        <li>Overviews
+                                        </li>
+                                        <li>Gwei Calculator
+                                        </li>
+                                        <li>Chain Connect
+                                        </li>
+                                        <li>Request a Chain</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-3 mt-5 mt-md-0">
+                                    <ul class="text-white fw-light fs-lg">
+                                        <h5 class="fw-semibold fs-lg">Company</h5>
+                                        <li>About Us
+                                        </li>
+                                        <li>Customers
+                                        </li>
+                                        <li>Newsroom
+                                        </li>
+                                        <li>Careers
+                                        </li>
+                                        <li>Blog
+                                        </li>
+                                        <li>Press Kit
+                                        </li>
+                                        <li>Terms of Service</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-3 mt-5 mt-md-0">
+                                    <ul class="text-white fw-light fs-lg">
+                                        <h5 class="fw-semibold fs-lg ">CONTACT</h5>
+                                        <li>General Inquiries
+                                        </li>
+                                        <li>Press
+                                        </li>
+                                        <li>Sales
+                                        </li>
+                                        <li>Discord
+                                        </li>
+                                        <li>Email</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright d-flex justify-content-center">
+                <p class=" fw-light m-0 color-gray fs-xs pt-3">
+                    Copyright © 2022 Transpose, Inc. All rights reserved.
+                </p>
+            </div>
+        </div>
+    </footer>
+        <!-- <footer>
+            <div class="custom-container">
+                <div class="footer-parent d-flex justify-content-between">
+                    <div class="footer-article">
+                        <img src="./assets/img/svg/logo.svg" alt="footer-logo">
+                        <p class="text-white fs-xs fw-light">Powering the future of blockchain technology with enhanced RPC solutions. Join us on the
+                            journey.</p>
+                                <a href="#" class="p-3"><img src="./assets/img/svg/telegram.svg" alt="telegram"><a>
+                                <a href="#" class="p-3"><img src="./assets/img/svg/twitter.svg" alt="twitter"></a>
+                                <a href="#" class="p-3"><img src="./assets/img/svg/discord.svg" alt="discord"></a>
+                    </div>
+                    <div class="footer-child ">
+                        
+                        <ul class="text-white fw-light fs-lg  solid">
+                            <li><h5 class="text-white fw-semibold fs-lg">APIs</h5></li>
+                            <li>Ethereum API</li>
+                            <li>Polygon API</li>
+                            <li>Arbitrum API</li>
+                            <li>Optimism API</li>
+                            <li>Solana API</li>
+                            <li>NFT API</li>
+                            <li>Transfers API</li>
+                            <li>Token API</li>
+                            <li>View all</li>
+                        </ul>
+                    </div>
+                    <div class="footer-child ">
+                         <ul class="text-white fw-light fs-lg  solid">
+                            <li><h5 class="text-white fw-semibold fs-lg">DEVELOPERS</h5></li>
+                            <li>Sign Up</li>
+                            <li>Login</li>
+                            <li>Newsletter</li>
+                            <li>Status</li>
+                            <li>Create Web3 Dapp</li>
+                            <li>Sepolia Faucet</li>
+                            <li>Goerli Faucet</li>
+                            <li>Mumbai Faucet</li>
+                            <li>Overviews</li>
+                            <li>Gwei Calculator</li>
+                            <li>Chain Connect</li>
+                            <li>Request a Chain</li>
+                        </ul>
+                    </div>
+                    <div class="footer-child ">
+                        <ul class="text-white fw-light fs-lg  solid">
+                            <li><h5 class="text-white fw-semibold fs-lg">Company</h5></li>
+                            <li>About Us</li>
+                            <li>Customers</li>
+                            <li>Newsroom</li>
+                            <li>Careers</li>
+                            <li>Blog</li>
+                            <li>Press Kit</li>
+                            <li>Terms of Service</li>
+                        </ul>
+                    </div>
+                    <div class="footer-child  ">
+                        <ul class="text-white fw-light fs-lg  solid">
+                            <li><h5 class="text-white fw-semibold fs-lg">CONTACT</h5></li>
+                            <li>General Inquiries</li>
+                            <li>Press</li>
+                            <li>Sales</li>
+                            <li>Discord</li>
+                            <li>Email</li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <p class="fw-light text-center fs-xs color-gray pt-4">Copyright © 2022 Transpose, Inc. All rights reserved.</p>
+            </div>
+        </footer> -->
+
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
